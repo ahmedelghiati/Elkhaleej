@@ -1,0 +1,42 @@
+body {
+    min-height: 100vh;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    width: 450px;
+    max-width: 90%;
+    margin: 0px 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    width: 600px;
+    margin: 140px 0px;
+}
+.card h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+.specs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.specs li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+.specs li:last-child {
+    border-bottom: none;
+}

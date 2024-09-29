@@ -1,0 +1,167 @@
+body {
+  /* background-image: url(../assets/slider-2.jpg);
+  background-size: cover; */
+  min-height: 100vh;
+  background-color: #f4fdf4;
+  background-image: none;
+}
+
+.title h2 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.products {
+  min-height: 90vh;
+}
+
+.products .product {
+  width: 290px;
+  height: 300px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  margin: 25px;
+  margin-bottom: 0px !important;
+  perspective: 1000px; /* Required for 3D transforms */
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+/* .product:hover .card {
+  transform: rotateY(180deg);
+} */
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 6px;
+}
+
+.card-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-front .img img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-front .title {
+  padding: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.card-back {
+  background-color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-back .details {
+  text-align: center;
+}
+
+.card-back .details h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: #333;
+}
+
+.card-back .details p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.products .product .img {
+  height: 250px;
+  width: 90%;
+  position: relative;
+}
+
+.products .product .img img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  transition: 0.3s;
+}
+
+.product .title {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  background-color: var(--maincolor);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  border-end-end-radius: 6px;
+  border-end-start-radius: 6px;
+  text-transform: capitalize;
+}
+
+/* .pd img:hover {
+  transform: scale(1.1) rotate(5deg);
+} */
+
+.morebtn {
+  width: 90%;
+  background-color: var(--maincolor);
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  animation: shaake 3s infinite;
+}
+
+.morebtn a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@keyframes shaake {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+footer {
+  margin-top: 20px;
+}
+
+.card .img .iceberg {
+  width: 96%;
+  height: 86%;
+}
